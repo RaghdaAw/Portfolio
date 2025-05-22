@@ -7,6 +7,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+    
   }
   .jc {
     &-center {
@@ -91,16 +92,7 @@
   }
 
  @media screen and (max-width: 1024px) {
-  // @for $i from 1 through 12 {
-  //   .col#{$i}-md {
-  //     width: calc(#{100% * $i / 12} - 3%);
-  //   }
-  // }
-  // @for $i from 1 through 12 {
-  //   .nmcol#{$i}-md {
-  //     width: (100%/ (12 / $i));
-  //   }
-  // }
+
   $columns: 1, 2, 3, 4,5, 6, 7, 8, 9, 10, 11, 12; 
 
 @each $i in $columns {
@@ -109,9 +101,6 @@
   }
   
 }
-// [class^="col"] {
-//       width: 80%;
-//     }
 @each $i in $columns {
   .nmcol#{$i}-md {
     width: (100% / (12 / $i));
