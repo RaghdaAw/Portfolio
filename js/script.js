@@ -1,17 +1,19 @@
 let navbar = document.querySelector(".menu2");
+
 document.querySelector("#burger").onclick = () => {
   navbar.classList.toggle("active");
 };
+
 window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
 // EmailJS-configuratie
 (function () {
-  emailjs.init("xbJpFNypk-IGljg69"); // Vul hier uw volledige en correcte publieke sleutel in.
+  emailjs.init("xbJpFNypk-IGljg69"); // Vervang met je eigen publieke sleutel
 })();
 
-// Het verwerken van formulierinzendingen
+// Formulierverwerking
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
 
@@ -22,10 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
       function () {
         alert("✅ Bericht is succesvol verzonden!");
         form.reset(); // Velden wissen
-        // Pagina opnieuw laden in 2 seconden
-        setTimeout(() => {
-          location.reload();
-        }, 2000);
+
+        // 👇 In plaats van reload, toon succesmelding of navigeer
+        const successMessage = document.createElement("p");
+        successMessage.textContent = "Je bericht is verzonden!";
+        successMessage.style.color = "green";
+        form.appendChild(successMessage);
       },
       function (error) {
         alert("❌ Er is een fout opgetreden tijdens het verzenden.");
