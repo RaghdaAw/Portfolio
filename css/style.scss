@@ -9,171 +9,168 @@
 @import "modules/border";
 
 //header
-.header{
-    padding: .5rem 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 100;
+.header {
+  padding: 0.5rem 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
 }
 .menu2 {
-    display: flex;
-    align-items: center;
-   
-    a {
-        margin: 0 .5rem;
-        padding: 1rem;
-        color: white;
-        font-size: large;
+  display: flex;
+  align-items: center;
 
-        &.talk {
-            padding: 0.5rem 1rem;
-            background: $purple;
-            border-radius: 50px;
-    
-            &:hover {
-                background: white;
-                color: $lightpurple;
-                cursor: pointer;
-            }
-        }
-    
-          
-        &:hover{
-            background: white;
-            color: $lightpurple;
-            cursor: pointer;
-        }
+  a {
+    margin: 0 0.5rem;
+    padding: 1rem;
+    color: white;
+    font-size: large;
+
+    &.talk {
+      padding: 0.5rem 1rem;
+      background: $purple;
+      border-radius: 50px;
+
+      &:hover {
+        background: white;
+        color: $lightpurple;
+        cursor: pointer;
+      }
     }
+
+    &:hover {
+      background: white;
+      color: $lightpurple;
+      cursor: pointer;
+    }
+  }
 }
 #burger {
-    display: none;
+  display: none;
 }
 // home
 .ui {
-    position: absolute;
-    top: 35rem;
+  position: absolute;
+  top: 35rem;
 }
 
 .web {
-    position: absolute;
-    top: 10rem;
+  position: absolute;
+  top: 10rem;
 }
 
 .float {
-    animation: float 2s linear infinite;
-    border-radius: 180px;
-    width: 250px;
-    height: 350px;
+  animation: float 2s linear infinite;
+  border-radius: 180px;
+  width: 250px;
+  height: 350px;
 }
 
 @keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
 
-    0%,
-    100% {
-        transform: translateY(0rem);
-    }
-
-    50% {
-        transform: translateY(-1.5rem);
-    }
+  50% {
+    transform: translateY(-1.5rem);
+  }
 }
 // about
 .project {
-    background: $purple;
-    padding: 2.5rem 2rem;
-    border-radius: 30px;
+  background: $purple;
+  padding: 2.5rem 2rem;
+  border-radius: 30px;
 
-    &:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-    }
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 }
 
 // services
 .curd {
-    border-radius: 30px;
+  border-radius: 30px;
 
-    &:hover {
-        transform: scale(1.050);
-        cursor: pointer;
-    }
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 // footer
 .submit {
-    button {
-        margin-left: 1rem;
-        padding: 1rem 2rem;
-        background: $purple;
-        color: white;
-        transition: 0.5s;
-        border-radius: 10rem;
+  button {
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    background: $purple;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10rem;
 
-        &:hover {
-            background: white;
-            color: $lightpurple;
-        }
+    &:hover {
+      background: white;
+      color: $lightpurple;
     }
+  }
 }
 
 .share {
-    text-align: center;
+  text-align: center;
 
-    a {
-        color: white;
-        height: 5rem;
-        width: 5rem;
-        line-height: 5rem;
-        background: $halfwhite;
-        border-radius: 50%;
-        margin: .5rem;
+  a {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: $halfwhite;
+    border-radius: 50%;
+    margin: 0.5rem;
 
-        &:hover {
-            transform: scale(1.2);
-            background: $purple;
-            cursor: pointer;
-        }
+    &:hover {
+      transform: scale(1.2);
+      background: $purple;
+      cursor: pointer;
     }
+  }
 }
- .no-dots {
-        list-style: none;
-    }
+.no-dots {
+  list-style: none;
+}
 // media queries
-@media screen and (max-width:1024px) {
-
-    .ui,
-    .web {
-        display: none;
-    }
+@media screen and (max-width: 1024px) {
+  .ui,
+  .web {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #burger {
-        display: block;
+  #burger {
+    display: block;
+  }
+
+  .menu2 {
+    position: absolute;
+    top: 100%;
+    background: $darkpurple;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+
+    a {
+      text-align: center;
+      display: block;
+      margin: 7.5rem 0;
+
+      &.contact {
+        margin: 0 25%;
+      }
     }
 
-    .menu2 {
-        position: absolute;
-        top: 100%;
-        background: $darkpurple;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        display: block;
-
-        a {
-            text-align: center;
-            display: block;
-            margin: 7.5rem 0;
-
-            &.contact {
-                margin: 0 25%;
-            }
-        }
-
-        &.active {
-            right: 0;
-        }
+    &.active {
+      right: 0;
     }
+  }
 }
