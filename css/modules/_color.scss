@@ -1,72 +1,68 @@
-$purple: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+$purple: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 $halfwhite: rgba(255, 255, 255, 0.5);
 $quarterwhite: rgba(255, 255, 255, 0.25);
-$halfpurple: linear-gradient(214.02deg, rgba(183, 92, 255, 0.5) 6.04%, rgba(103, 26, 228, 0.5) 92.95%);
-$lightpurple:#9F39DA;
-$halfblack:rgba(0, 0, 0, 0.5);
-$darkblue: #181E41;
+$halfpurple: linear-gradient(
+  214.02deg,
+  rgba(183, 92, 255, 0.5) 6.04%,
+  rgba(103, 26, 228, 0.5) 92.95%
+);
+$lightpurple: #9f39da;
+$halfblack: rgba(0, 0, 0, 0.5);
+$darkblue: #181e41;
 $darkpurple: rgba(130, 89, 196, 0.793);
 
-
-.bg-image {
-    background-image: url(/img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   
-}
-
 .bg-image2 {
-    background-image: url("../img/background2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/background2.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-darkblue {
-    background: $darkblue;
+  background: $darkblue;
 }
 .bg-white {
-    background: white;
+  background: white;
 }
 
 .bg-black {
-    background: black;
+  background: black;
 }
 
 .bg-purple {
-    background: $purple;
+  background: $purple;
 }
 
 .bg-halfpurple {
-    background: $halfpurple;
+  background: $halfpurple;
 }
 
-
 .black {
-    color: black;
+  color: black;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .lightpurple {
-    color: $lightpurple;
+  color: $lightpurple;
 }
 
 .halfwhite {
-    color: $halfwhite;
+  color: $halfwhite;
 }
 
 .halfblack {
-    color: $halfblack;
+  color: $halfblack;
 }
 
 .quarterwhite {
-    color: $quarterwhite;
+  color: $quarterwhite;
 }
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width: 1024px) {
+}
 
-@media screen and (max-width:414px) {}
+@media screen and (max-width: 414px) {
+}

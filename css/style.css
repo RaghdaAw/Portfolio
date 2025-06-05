@@ -1,19 +1,12 @@
-.bg-image {
-  background-image: url(/img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .bg-image2 {
-  background-image: url("../img/background2.jpg");
+  background-image: url("../img/background2.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-darkblue {
-  background: #181E41;
+  background: #181e41;
 }
 
 .bg-white {
@@ -25,7 +18,7 @@
 }
 
 .bg-purple {
-  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 }
 
 .bg-halfpurple {
@@ -41,7 +34,7 @@
 }
 
 .lightpurple {
-  color: #9F39DA;
+  color: #9f39da;
 }
 
 .halfwhite {
@@ -69,7 +62,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
-  color: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  color: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   font-family: "Poppins", sans-serif;
 }
 
@@ -3305,17 +3298,17 @@ h5 {
 }
 .menu2 a.talk {
   padding: 0.5rem 1rem;
-  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 50px;
 }
 .menu2 a.talk:hover {
   background: white;
-  color: #9F39DA;
+  color: #9f39da;
   cursor: pointer;
 }
 .menu2 a:hover {
   background: white;
-  color: #9F39DA;
+  color: #9f39da;
   cursor: pointer;
 }
 
@@ -3349,7 +3342,7 @@ h5 {
   }
 }
 .project {
-  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   padding: 2.5rem 2rem;
   border-radius: 30px;
 }
@@ -3369,14 +3362,14 @@ h5 {
 .submit button {
   margin-left: 1rem;
   padding: 1rem 2rem;
-  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   color: white;
   transition: 0.5s;
   border-radius: 10rem;
 }
 .submit button:hover {
   background: white;
-  color: #9F39DA;
+  color: #9f39da;
 }
 
 .share {
@@ -3393,7 +3386,7 @@ h5 {
 }
 .share a:hover {
   transform: scale(1.2);
-  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   cursor: pointer;
 }
 

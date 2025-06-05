@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("✅ Bericht is succesvol verzonden!");
         form.reset(); // Velden wissen
 
-        // 👇 In plaats van reload, toon succesmelding of navigeer
+        // In plaats van reload, toon succesmelding of navigeer
         const successMessage = document.createElement("p");
         successMessage.textContent = "Je bericht is verzonden!";
         successMessage.style.color = "green";
