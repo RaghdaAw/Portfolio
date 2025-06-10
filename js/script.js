@@ -10,7 +10,7 @@ window.onscroll = () => {
 
 // EmailJS-configuratie
 (function () {
-  emailjs.init("xbJpFNypk-IGljg69"); // Vervang met je eigen publieke sleutel
+  emailjs.init("xbJpFNypk-IGljg69"); 
 })();
 
 // Formulierverwerking
