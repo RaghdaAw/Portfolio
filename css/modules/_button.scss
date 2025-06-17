@@ -5,13 +5,11 @@
   text-decoration: none;
   transition: 0.5s;
   border-radius: 10rem;
-
   &:hover {
     transform: scale(1.2);
     cursor: pointer;
   }
 }
-
 .btn {
   @extend %btn-base;
 }

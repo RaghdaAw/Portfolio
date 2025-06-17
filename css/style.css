@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg-image2 {
   background-image: url("../img/background2.avif");
   background-repeat: no-repeat;
@@ -51,19 +52,30 @@
 
 * {
   box-sizing: border-box;
-  text-decoration: none;
   margin: 0;
   padding: 0;
-  outline: none;
-  border: none;
-  transition: 0.2s linear;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #9f39da;
+  outline-offset: 2px;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
-  color: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 }
 
 .font2 {
@@ -72,7 +84,7 @@ html {
 
 @media screen and (max-width: 414px) {
   body {
-    font-size: 50%;
+    font-size: 1.6rem;
     overflow-x: hidden;
   }
 }
@@ -359,12 +371,6 @@ p {
   }
   .ta-justify-md {
     text-align: justify;
-  }
-  .flex-md {
-    display: flex;
-  }
-  .none-md {
-    display: none;
   }
   .flex-md {
     display: flex;
@@ -679,7 +685,7 @@ p {
   text-decoration: underline;
 }
 
-.hover :hover {
+.hover:hover { /* تم التعديل هنا: استخدام & */
   opacity: 50%;
   transition: 0.5s;
 }
@@ -733,49 +739,49 @@ p {
 }
 @media screen and (max-width: 768px) {
   .size1-s {
-    font-size: 0.5rem;
+    font-size: 1rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size2-s {
-    font-size: 1rem;
+    font-size: 2rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size3-s {
-    font-size: 1.5rem;
+    font-size: 3rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size4-s {
-    font-size: 2rem;
+    font-size: 4rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size5-s {
-    font-size: 2.5rem;
+    font-size: 5rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size6-s {
-    font-size: 3rem;
+    font-size: 6rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size7-s {
-    font-size: 3.5rem;
+    font-size: 7rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size8-s {
-    font-size: 4rem;
+    font-size: 8rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size9-s {
-    font-size: 4.5rem;
+    font-size: 9rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size10-s {
-    font-size: 5rem;
+    font-size: 10rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size11-s {
-    font-size: 5.5rem;
+    font-size: 11rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size12-s {
-    font-size: 6rem;
+    font-size: 12rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size13-s {
-    font-size: 6.5rem;
+    font-size: 13rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size14-s {
-    font-size: 7rem;
+    font-size: 14rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
   .size15-s {
-    font-size: 7.5rem;
+    font-size: 15rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
   }
 }
 @media screen and (max-width: 414px) {
@@ -3150,8 +3156,24 @@ p {
 }
 
 .photo {
-  width: 40px;
+  max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.large-project-photo {
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.project figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .round {
@@ -3236,6 +3258,46 @@ p {
 
 .height10 {
   height: 10rem;
+}
+
+.width11 {
+  width: 11rem;
+}
+
+.height11 {
+  height: 11rem;
+}
+
+.width12 {
+  width: 12rem;
+}
+
+.height12 {
+  height: 12rem;
+}
+
+.width13 {
+  width: 13rem;
+}
+
+.height13 {
+  height: 13rem;
+}
+
+.width14 {
+  width: 14rem;
+}
+
+.height14 {
+  height: 14rem;
+}
+
+.width15 {
+  width: 15rem;
+}
+
+.height15 {
+  height: 15rem;
 }
 
 @media screen and (max-width: 414px) {

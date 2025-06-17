@@ -25,7 +25,7 @@
 }
 
 .hover {
-  :hover {
+  &:hover { /* تم التعديل هنا: استخدام & */
     opacity: 50%;
     transition: 0.5s;
   }
@@ -42,7 +42,7 @@
 @media screen and (max-width: 768px) {
   @for $i from 1 through 15 {
     .size#{$i}-s {
-      font-size: $i * 0.5rem;
+      font-size: $i * 1rem; /* تم التعديل هنا إلى 1rem، راجع ما يناسب تصميمك */
     }
   }
 }

@@ -148,13 +148,6 @@
   .none-md {
     display: none;
   }
-  .flex-md {
-    display: flex;
-  }
-
-  .none-md {
-    display: none;
-  }
 }
 @media screen and (max-width: 768px) {
   @for $i from 1 through 12 {

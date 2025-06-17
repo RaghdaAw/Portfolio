@@ -10,59 +10,43 @@ $lightpurple: #9f39da;
 $halfblack: rgba(0, 0, 0, 0.5);
 $darkblue: #181e41;
 $darkpurple: rgba(130, 89, 196, 0.793);
-
 .bg-image2 {
   background-image: url("../img/background2.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .bg-darkblue {
   background: $darkblue;
 }
 .bg-white {
   background: white;
 }
-
 .bg-black {
   background: black;
 }
-
 .bg-purple {
   background: $purple;
 }
-
 .bg-halfpurple {
   background: $halfpurple;
 }
-
 .black {
   color: black;
 }
-
 .white {
   color: white;
 }
-
 .lightpurple {
   color: $lightpurple;
 }
-
 .halfwhite {
   color: $halfwhite;
 }
-
 .halfblack {
   color: $halfblack;
 }
-
 .quarterwhite {
   color: $quarterwhite;
 }
 
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 414px) {
-}
